@@ -18,9 +18,9 @@
 }
 
 .nav {
-  display: flexbox;
+  display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo {
@@ -121,7 +121,7 @@
   font-weight: 400;
   margin: 24px 0 0;
 }
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+
 .staff__list {
   max-width: 760px;
   top: 68px;
@@ -372,6 +372,7 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
 }
 
 .about__title {
@@ -389,11 +390,17 @@
   font-weight: 400;
   max-width: 660px;
   z-index: 1;
+  position: relative;
+  padding: inherit;
 }
 
 .about__paragraph {
-  margin: 0;
-  bottom: 32px;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -411,31 +418,30 @@
   box-sizing: border-box;
   background-color: #000000;
   color: white;
-  display: flex;
-  top: -60px;
-  right: -102;
-  bottom: -60px;
-  left: -80px;
+  padding-top: 60px;
+  padding-right: 102px;
+  padding-bottom: 60px;
+  padding-left: 80px;
 }
 
 .footer__columns {
-  background-color: #1f1f1f;
+  display: flex;
 }
 
 .footer__column {
-  display: flex;
-  color: white;
 }
 
 .footer__column_content_hours {
-  color: white;
-  justify-content: flex-end;
+  margin-left: auto;
 }
 
 .footer__column_content_social {
+  margin-left: 100px;
 }
 
 .footer__logo {
+  height: 21px;
+  width: 116px;
 }
 
 .footer__list {
@@ -445,14 +451,16 @@
 }
 
 .footer__list-item {
-  color: white;
-  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.footer__list-item:last-child {
+  margin: 0;
 }
 
 .footer__column-heading {
   margin: 0;
-  display: flex;
-  justify-content: flex-end;
+  margin-bottom: 20px;
 }
 
 .footer__column-link {
@@ -467,6 +475,8 @@
 }
 
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .footer__copyright {
