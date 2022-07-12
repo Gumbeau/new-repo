@@ -67,8 +67,6 @@
 .header__image {
   z-index: 1;
   max-width: 636px;
-  /* height: 20px; */
-  /* width: 135px; */
   position: absolute;
   top: 135px;
   right: 20px;
@@ -168,8 +166,6 @@
   font-size: 14px;
   line-height: 20px;
   color: #838383;
-  /* Auto margins applied on a flex item automatically extend specified margin to occupy the extra space in the flex container */
-  /* In our case, this pushes the element down to the bottom */
   margin-top: auto;
 }
 
@@ -422,6 +418,7 @@
   padding-right: 102px;
   padding-bottom: 60px;
   padding-left: 80px;
+  margin: 0;
 }
 
 .footer__columns {
@@ -429,6 +426,8 @@
 }
 
 .footer__column {
+  height: 21px;
+  width: 116px;
 }
 
 .footer__column_content_hours {
@@ -481,4 +480,6 @@
 
 .footer__copyright {
   color: white;
+  margin-bottom: 60px;
+  margin-left: 80px;
 }
