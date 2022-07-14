@@ -437,7 +437,6 @@
 }
 
 .footer__logo {
-  height: 21px;
   width: 116px;
 }
 
@@ -465,6 +464,9 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .footer__column-link:hover {
