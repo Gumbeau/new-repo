@@ -4,6 +4,7 @@
   font-family: "Helvetica Neue", Arial, "sans-serif";
   font-size: 16px;
   line-height: 20px;
+  margin: auto;
 }
 
 .header {
@@ -20,7 +21,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .logo {
@@ -35,7 +36,6 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
-  display: flex;
   justify-content: flex-end;
 }
 
@@ -122,14 +122,13 @@
 
 .staff__list {
   max-width: 760px;
-  top: 68px;
-  bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   margin: 0 auto;
   margin-top: 68px;
   list-style: none;
+  padding-left: 0;
 }
 
 .card {
@@ -210,25 +209,24 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
+  height: 24px;
+  width: 24px;
+  font-size: 20px;
 }
 
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
-  height: 24px;
-  width: 24px;
 }
 
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
-  height: 24px;
-  width: 24px;
 }
 
 .event-info__text {
-  font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   margin: 0;
+  font-size: 16px;
 }
 
 .events__description {
@@ -339,7 +337,6 @@
 
 .step {
   display: block;
-  bottom: 220px;
   gap: 40px;
   flex: 0 0 220px;
 }
@@ -373,11 +370,11 @@
 
 .about__title {
   margin: 0;
+  justify-content: space-between;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
-  right: 120px;
 }
 
 .about__content {
@@ -387,7 +384,7 @@
   max-width: 660px;
   z-index: 1;
   position: relative;
-  padding: inherit;
+  margin-left: 120px;
 }
 
 .about__paragraph {
@@ -412,8 +409,7 @@
 
 .footer {
   box-sizing: border-box;
-  background-color: #000000;
-  color: white;
+  background-color: #1f1f1f;
   padding-top: 60px;
   padding-right: 102px;
   padding-bottom: 60px;
@@ -445,6 +441,7 @@
 
 .footer__list-item {
   margin-bottom: 16px;
+  color: #ffffff;
 }
 
 .footer__list-item:last-child {
@@ -454,6 +451,7 @@
 .footer__column-heading {
   margin-top: 0;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .footer__column-link {
